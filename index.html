@@ -22,6 +22,7 @@
 	<!-- Подключаем наш файл со стилями, который находится в папке CSS -->
 	<link rel="stylesheet" href="portfolio/css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="portfolio/css/style.css">
+	<link rel="stylesheet" href="portfolio/css/animate.css">
 </head>
 
 <body>
@@ -29,17 +30,17 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-7">
-					<img class="header-img" src="portfolio/img/main-img.png" alt="Монитор">
+					<img class="header-img wow fadeInLeftBig" src="portfolio/img/main-img.png" alt="Монитор">
 				</div>
 				<!-- /.col-lg-7 -->
 				<div class="col-xl-5">
-					<p class="header-pretense">Веб-разработчик</p>
-					<h1 class="header-title">Богдан Липка</h1>
-					<p class="header-subtitle">Верстка на HTML/CSS <br>
+					<p class="header-pretense wow fadeInRightBig" data-wow-delay="0.1s">Веб-разработчик</p>
+					<h1 class="header-title wow fadeInRightBig" data-wow-delay="0.2s">Богдан Липка</h1>
+					<p class="header-subtitle wow fadeInRightBig" data-wow-delay="0.3s">Верстка на HTML/CSS <br>
 						Разработка сайтов под ключ
 					</p>
-					<div class="header-button-block">
-						<button class="header-button">Связаться</button>
+					<div class="header-button-block wow fadeInRightBig" data-wow-delay="0.4s">
+						<a href="https://www.facebook.com/profile.php?id=100001901296149" class="header-button">Связаться</a>
 						<small class="free-touch">*Это бесплатно</small>
 					</div>
 				</div>
@@ -52,7 +53,7 @@
 
 	<section class="portfolio">
 		<div class="container">
-			<div class="portfolio-block">
+			<div class="portfolio-block wow fadeIn">
 				<h2 class="portfolio-title">Портфорлио</h2>
 				<p class="portfolio-subtitle">Мои работы</p>
 				<div class="row">
@@ -89,16 +90,16 @@
 				<div class="col-md-4">
 					<div class="social-block">
 						<p>Подпишитесь:</p>
-						<a href="#"><img src="portfolio/img/socials/facebook-logo-button.png" alt="Facebook"></a>
-						<a href="#"><img src="portfolio/img/socials/telegram-symbol.png" alt="Telegram"></a>
-						<a href="#"><img src="portfolio/img/socials/vk-social-logotype.png" alt="VK"></a>
-						<a href="#"><img src="portfolio/img/socials/youtube-symbol.png" alt="Youtube"></a>
+						<a class="wow bounceInDown" data-wow-delay="0.1s" href="https://www.facebook.com/profile.php?id=100001901296149"><img src="portfolio/img/socials/facebook-logo-button.png" alt="Facebook"></a>
+						<a class="wow bounceInDown" data-wow-delay="0.2s" href="#"><img class="wow bounceInUp" src="portfolio/img/socials/telegram-symbol.png" alt="Telegram"></a>
+						<a class="wow bounceInDown" data-wow-delay="0.3s" href="#"><img class="wow bounceInUp" src="portfolio/img/socials/vk-social-logotype.png" alt="VK"></a>
+						<a class="wow bounceInDown" data-wow-delay="0.4s" href="#"><img class="wow bounceInUp" src="portfolio/img/socials/youtube-symbol.png" alt="Youtube"></a>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="footer-cta-block">
 						<p class="footer-cta">Напишите мне:</p>
-						<button class="footer-button">Написать</button>
+						<a href="https://www.facebook.com/profile.php?id=100001901296149" class="footer-button">Написать</a>
 					</div>
 				</div>
 			</div>
@@ -106,5 +107,10 @@
 		</div>
 		<!-- /.container -->
 	</footer>
+
+	<script src="portfolio/js/wow.min.js"></script>
+	<script>
+        new WOW().init();
+	</script>
 </body>
 </html>
