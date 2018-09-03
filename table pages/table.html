@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Единая таблица</title>
+
+    <link rel="shortcut icon" href="img/favicon_tb.ico">
+
+    <!-- Bootstrap core CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+    <!-- Custom fonts for this template-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <!-- Page level plugin CSS-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.18/datatables.min.css"/>
+
+    <!-- Custom styles for this template-->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body id="page-top">
+    <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+
+        <a class="navbar-brand mr-1" href="#">Единая таблица</a>
+
+        <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Navbar -->
+        <ul class="navbar-nav ml-auto ml-5">
+
+            <li class="nav-item dropdown-down">
+                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Загрузка отчета
+                </a>
+            </li>
+
+            <li class="nav-item dropdown-down">
+                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Сервис
+                </a>
+            </li>
+
+            <li class="nav-item dropdown-down">
+                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Проосмотр
+                </a>
+            </li>
+
+            <li class="nav-item dropdown-down">
+                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-cogs" aria-hidden="true"></i>
+                </a>
+            </li>
+
+            <li class="nav-item dropdown no-arrow">
+                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-user-circle fa-fw"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                    <a class="dropdown-item" href="#">Изменить параметры входа в систему</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Выход из системы</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <ul class="sidebar navbar-nav">
+            <ul class="sidebar navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="control-panel.html">
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                        <span>Панель управления</span>
+                    </a>
+                </li>
+            </ul>
+        </ul>
+
+        <div id="content-wrapper">
+            <div class="container-fluid">
+                <!-- DataTables -->
+                <div class="card mb-3">
+                    <div class="card-header">Таблица</div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                <thead>
+                                <tr>
+                                    <th>Начальная дата</th>
+                                    <th>Конечная дата</th>
+                                    <th>Номер</th>
+                                    <th>E-</th>
+                                    <th>No Send E-</th>
+                                    <th>Send E-</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1.07.2018</td>
+                                    <td>31.07.2018</td>
+                                    <td>1</td>
+                                    <td>mail</td>
+                                    <td>mail</td>
+                                    <td>mail</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-header">Информация</div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered" width="100%" cellspacing="0">
+                                <thead>
+                                <tr>
+                                    <th>regid</th>
+                                    <th>Номер клиента</th>
+                                    <th>Имя клиента</th>
+                                    <th>№ транзакции</th>
+                                    <th>Сумма транзакции без НДС</th>
+                                    <th>НДС</th>
+                                    <th>Сумма транзакции с НДС</th>
+                                    <th>Дата транзакции</th>
+                                    <th>Валюта</th>
+                                    <th>Номер карты</th>
+                                    <th>Действие карты</th>
+                                    <th>Вид карты</th>
+                                    <th>Тэудат Зэут</th>
+                                    <th>Email</th>
+                                    <th>Номер телефона</th>
+                                    <th>Город</th>
+                                    <th>Улица</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th colspan="4">Итого сумма:</th>
+                                    <td>0.00</td>
+                                    <td>0.00</td>
+                                    <td>0.00</td>
+                                    <td colspan="10"></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="jumbotron">
+                    <div class="container ml-0">
+                        <div class="input-group" style="width: 47%">
+                            <h5 style="margin-top: 15px">Действие:</h5>
+                            <select class="custom-select mt-2 ml-2" id="inputGroupSelect04">
+                                <option selected>Получить транзакции в одном PDF</option>
+                            </select>
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary mt-2" type="button">Выполнить</button>
+                            </div>
+                        </div>
+
+                        <div class="input-group input-group-sm mb-3 mt-3" style="height: 35px">
+                            <h5 class="mt-1">Сумма транзакции без НДС:</h5>
+                            <div class="input-group-prepend ml-2"></div>
+                            <input type="text" class="form-control-sm" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="0.00">
+                        </div>
+
+                        <div class="input-group input-group-sm mb-3 mt-3" style="height: 35px">
+                            <h5 class="mt-1">НДС:</h5>
+                            <div class="input-group-prepend ml-2"></div>
+                            <input type="text" class="form-control-sm" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="0.00">
+                        </div>
+
+                        <div class="input-group input-group-sm mb-3 mt-3" style="height: 35px">
+                            <h5 class="mt-1">Сумма транзакции:</h5>
+                            <div class="input-group-prepend ml-2"></div>
+                            <input type="text" class="form-control-sm" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="0.00">
+                        </div>
+
+                        <div class="input-group input-group-sm mb-3 mt-3" style="height: 35px">
+                            <h5 class="mt-1">Всего записей:</h5>
+                            <div class="input-group-prepend ml-2"></div>
+                            <input type="text" class="form-control-sm" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="0">
+                        </div>
+
+                        <div class="input-group input-group-sm mb-3 mt-3" style="height: 35px">
+                            <h5 class="mt-1">Выделено записей:</h5>
+                            <div class="input-group-prepend ml-2"></div>
+                            <input type="text" class="form-control-sm" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="0">
+                        </div>
+
+                        <div class="input-group input-group-sm mb-3 mt-3" style="height: 35px">
+                            <h5 class="mt-1">Найдено E-mail адресов:</h5>
+                            <div class="input-group-prepend ml-2"></div>
+                            <input type="text" class="form-control-sm" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="0">
+                        </div>
+                    </div>
+                </div>
+
+                <h5 style="text-align: center">Окно состояния:</h5>
+                <input class="form-control" placeholder="08.16.2018 14:42:31 - В диспетчере загружено: 0 задач" style="font-weight: 600">
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /.content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Вы действительно хотите выйти ?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Выберите «Выход» ниже, если вы готовы завершить текущий сеанс.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Отмена</button>
+                    <a class="btn btn-primary" href="#">Выход</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Page level plugin JavaScript-->
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/script.min.js"></script>
+
+    <!-- Demo scripts for this page-->
+    <script src="js/demo/datatables-demo.js"></script>
+
+</body>
+</html>
