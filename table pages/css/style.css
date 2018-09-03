@@ -88,6 +88,10 @@ body.fixed-nav.sidebar-toggled #content-wrapper {
     width: 100%;
 }
 
+.input-group > h5 {
+    margin-top: 15px
+}
+
 .navbar-nav .nav-item.active .nav-link {
     color: #fff;
 }
@@ -100,7 +104,7 @@ body.fixed-nav.sidebar-toggled #content-wrapper {
     border: 0;
     font-weight: 900;
     content: '\f105';
-    font-family: 'Font Awesome 5 Free';
+    font-family: 'Font Awesome 5 Free', serif;
 }
 
 .navbar-nav .nav-item.dropdown.show .dropdown-toggle::after {
@@ -137,6 +141,23 @@ body.fixed-nav.sidebar-toggled #content-wrapper {
     padding-top: 7px;
 }
 
+.w-btn {
+    width: 18.5%
+}
+
+.w-btn-2 {
+    width: 18.5%;
+    margin-left: 5px
+}
+
+.w-btn-3 {
+    width: 19%
+}
+
+.ml-0 > div {
+    width: 47%
+}
+
 .hgt {
     height: 35px
 }
@@ -156,7 +177,8 @@ body.fixed-nav.sidebar-toggled #content-wrapper {
 }
 
 #clientNum {
-    width: 200px; text-align: center
+    width: 200px;
+    text-align: center
 }
 
 .text-center {
@@ -168,18 +190,19 @@ body.fixed-nav.sidebar-toggled #content-wrapper {
     font-size: 110%;
 }
 
-.bkgd-color {
+.bgc-color {
     background-color: #ffe6dd
 }
-.mr {
+
+.m-l {
     margin-left: 90%
 }
 
-.mg-btn {
+.ml-btn {
     margin-left: 69.5%
 }
 
-.mar-wid {
+.ml-w {
     margin-left: 10px;
     width: 99%
 }
@@ -261,7 +284,6 @@ body.fixed-nav.sidebar-toggled #content-wrapper {
         width: 100%;
         text-align: left;
         padding: 1rem;
-        width: 225px;
     }
 
     .sidebar .nav-item .nav-link span {

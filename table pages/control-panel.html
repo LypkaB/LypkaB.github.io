@@ -9,28 +9,27 @@
 
     <link rel="shortcut icon" href="img/favicon_cp.ico">
 
-    <!-- Bootstrap core CSS-->
+    <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 
-    <!-- Custom fonts for this template-->
+    <!-- Custom fonts for this template -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
-    <!-- Styles for this template-->
+    <!-- Styles for this template -->
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
+    <!-- Navbar -->
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
         <a class="navbar-brand mr-1" href="#">Панель управления</a>
         <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle">
             <i class="fas fa-bars"></i>
         </button>
 
-        <!-- Navbar -->
         <ul class="navbar-nav ml-auto ml-5">
             <li class="nav-item dropdown no-arrow">
-                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="fas fa-user-circle fa-fw"></i>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
@@ -41,6 +40,7 @@
             </li>
         </ul>
     </nav>
+    <!-- /.Navbar -->
 
     <div id="wrapper">
         <!-- Sidebar -->
@@ -57,6 +57,7 @@
                 </a>
             </li>
         </ul>
+        <!-- /.Sidebar -->
 
         <div id="content-wrapper">
             <div class="container-fluid">
@@ -64,56 +65,73 @@
                     <div class="container">
                         <h2 class="display-6 text-center"><u>Справочная информация о работе с модулем</u></h2>
                         <p class="text-center">
-                            <a class="btn btn-secondary mt-4" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                Смотреть &raquo;
+                            <a class="btn btn-secondary mt-4 dropdown-toggle" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Смотреть
                             </a>
                         </p>
                         <div class="collapse" id="collapseExample">
                             <div class="card card-body">
-                                <p>Алгоритм действий получения отчета: <br>
-                                    1. Если ранее не загружали, то загружаем файл excel c информацией по всем картам в буфер <br>
-                                    2. Создаем из буфера таблицу "Cards" <br>
-                                    3. Загружаем файл excel полученный с информацией "Easy" по карте в буфер <br>
-                                    4. Создаем из буфера таблицу "EasyCards" <br>
-                                    5. Загружаем файл excel полученный с информацией от кредитной компании в буфер <br>
-                                    6. Создаем из буфера таблицу "CreditCompany" <br>
-                                    7. При условии, что все три выше указанные таблицы загружены и сформированы, приступаем к
-                                    формированию отчета <br>
-                                    8. Группируем таблицы в отчет <br>
-                                    9. Полученную таблицу можем сохранить на Вашем компьютере в excel формате <br>
-                                    <br>
+                                <p>Алгоритм действий получения отчета:<br>
+                                    1. Если ранее не загружали, то загружаем файл excel c информацией по всем картам в буфер<br>
+                                    2. Создаем из буфера таблицу "Cards"<br>
+                                    3. Загружаем файл excel полученный с информацией "Easy" по карте в буфер<br>
+                                    4. Создаем из буфера таблицу "EasyCards"<br>
+                                    5. Загружаем файл excel полученный с информацией от кредитной компании в буфер<br>
+                                    6. Создаем из буфера таблицу "CreditCompany"<br>
+                                    7. При условии, что все три выше указанные таблицы загружены и сформированы, приступаем к формированию отчета<br>
+                                    8. Группируем таблицы в отчет<br>
+                                    9. Полученную таблицу можем сохранить на Вашем компьютере в excel формате<br>
                                     Примечание: загрузка excel файлов возможна только в формате Excel 97-2003
                                 </p>
                                 <p><u>Описание значения параметра flag в таблицу отчета:</u></p>
-                                <div class="alert alert-danger" role="alert">flag=0 - Данные не определены, либо присутствует не соответствие данных, либо задвоеность данных</div>
-                                <div class="alert alert-primary" role="alert">flag=1 - Проплачено, всё ОК !</div>
-                                <div class="alert alert-warning" role="alert">flag=2 - К карте привязано несколько клиентов</div>
-                                <div class="alert alert-danger" role="alert">flag=3 - Клиент отсутствует в БД "Cards" и определен по БД "EasyCards"</div>
-                                <div class="alert alert-primary" role="alert">flag=4 - Клиенты в БД "EasyCards" не выполнившие проплату (в excel отчетe 2-й лист)</div>
-                                <div class="alert alert-primary" role="alert">flag=5 - Имеется несколько одинаковых сделок в БД "CreditCard", к которым привязана 1 сделка в БД "EasyCards" (в excel отчетe 3-й лист)</div>
-                                <div class="alert alert-primary" role="alert">flag=6 - Имеется несколько одинаковых сделок в БД "CreditCard", к которым привязано более 1 сделки в БД "EasyCards" (в excel отчетe 4-й лист)</div>
-                                <div class="alert alert-primary" role="alert">flag=7 - Клиенты в БД "EasyCards", которых нет в CRM (в excel отчетe 5-й лист)</div>                            </div>
+                                <div class="alert alert-danger" role="alert">
+                                    flag=0 - Данные не определены, либо присутствует не соответствие данных, либо задвоеность данных
+                                </div>
+                                <div class="alert alert-primary" role="alert">
+                                    flag=1 - Проплачено, всё ОК !
+                                </div>
+                                <div class="alert alert-warning" role="alert">
+                                    flag=2 - К карте привязано несколько клиентов
+                                </div>
+                                <div class="alert alert-danger" role="alert">
+                                    flag=3 - Клиент отсутствует в БД "Cards" и определен по БД "EasyCards"
+                                </div>
+                                <div class="alert alert-primary" role="alert">
+                                    flag=4 - Клиенты в БД "EasyCards" не выполнившие проплату (в excel отчетe 2-й лист)
+                                </div>
+                                <div class="alert alert-primary" role="alert">
+                                    flag=5 - Имеется несколько одинаковых сделок в БД "CreditCard", к которым привязана 1 сделка в БД "EasyCards" (в excel отчетe 3-й лист)
+                                </div>
+                                <div class="alert alert-primary" role="alert">
+                                    flag=6 - Имеется несколько одинаковых сделок в БД "CreditCard", к которым привязано более 1 сделки в БД "EasyCards" (в excel отчетe 4-й лист)
+                                </div>
+                                <div class="alert alert-primary" role="alert">
+                                    flag=7 - Клиенты в БД "EasyCards", которых нет в CRM (в excel отчетe 5-й лист)
+                                </div>
+                            </div>
                         </div>
-
                     </div>
                 </div>
                 <a name="tables">
-                    <button type="button" class="btn btn-success">Создать таблицу cards</button>
-                    <button type="button" class="btn btn-success">Создать таблицу "EasyCard"</button>
+                    <button type="button" class="btn btn-success w-btn">Создать таблицу cards</button>
+                    <button type="button" class="btn btn-success w-btn-2">Создать таблицу "EasyCard"</button>
                     <button type="button" class="btn btn-success">Создать таблицу "Кредитная компания"</button>
                     <button type="button" class="btn btn-success">Сгруппировать таблицы в отчет</button><br>
-                    <button type="button" class="btn btn-success">Просмотр буфера сервера</button>
-                    <button type="button" class="btn btn-success">Просмотр и экспорт таблиц</button><br>
-                    <button type="button" class="btn btn-success">Загрузить Excel файл в буфер сервера</button><br>
+                    <button type="button" class="btn btn-success w-btn">Просмотр буфера сервера</button>
+                    <button type="button" class="btn btn-success w-btn-2">Просмотр и экспорт таблиц</button>
+                    <button type="button" class="btn btn-success w-btn-3">Загрузить Excel файл в буфер сервера</button><br>
                 </a>
             </div>
+            <!-- /.container-fluid -->
         </div>
+        <!-- /.content-wrapper -->
     </div>
+    <!-- /.wrapper -->
 
-    <!-- Scroll to Top Button-->
+    <!-- Scroll to Top Button -->
     <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
 
-    <!-- Logout Modal-->
+    <!-- Logout Modal -->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
          aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -124,7 +142,7 @@
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
-                <div class="modal-body">Выберите «Выход» ниже, если вы готовы завершить текущий сеанс.</div>
+                <div class="modal-body">Выберите «Выход» ниже, если вы готовы завершить текущий сеанс</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Отмена</button>
                     <a class="btn btn-primary" href="#">Выход</a>
@@ -132,8 +150,9 @@
             </div>
         </div>
     </div>
+    <!-- /.Logout Modal -->
 
-    <!-- Bootstrap core JavaScript-->
+    <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
