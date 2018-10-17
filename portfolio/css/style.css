@@ -124,6 +124,34 @@ header {
     text-decoration: underline;
 }
 
+.list-container {
+    margin-top: 1%;
+    text-align: center;
+}
+
+.title {
+    margin-left: 2.5%;
+    text-decoration: underline;
+}
+
+ul {
+    text-decoration: none;
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+    margin-top: 1%;
+}
+
+li a {
+    text-decoration: none;
+}
+
+li:hover {
+    transform: scale(1.5);
+}
+
 /* Footer */
 footer {
     background-color: #3a7dfd;
