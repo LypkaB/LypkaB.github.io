@@ -126,30 +126,27 @@ header {
 
 .list-container {
     margin-top: 1%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
-.title {
-    margin-left: 2.5%;
-    text-decoration: underline;
-}
-
-ul {
-    text-decoration: none;
-    text-align: center;
-}
-
-li {
-    list-style-type: none;
-    margin-top: 1%;
-}
-
-li a {
+.list-container a {
     text-decoration: none;
 }
 
-li:hover {
-    transform: scale(1.5);
+.right-col {
+    width: 180px;
+    text-align: center;
+    border-top: 2px solid gray;
+    border-right: 2px solid gray;
+    border-bottom: 2px solid gray;
+}
+
+.left-col {
+    width: 400px;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    border-left: 2px solid gray;
 }
 
 /* Footer */
