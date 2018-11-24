@@ -124,31 +124,6 @@ header {
     text-decoration: underline;
 }
 
-.list-container {
-    margin-top: 1%;
-    display: flex;
-    justify-content: center;
-}
-
-.list-container a {
-    text-decoration: none;
-}
-
-.right-col {
-    width: 180px;
-    text-align: center;
-    border-top: 2px solid gray;
-    border-right: 2px solid gray;
-    border-bottom: 2px solid gray;
-}
-
-.left-col {
-    width: 400px;
-    border-top: 2px solid gray;
-    border-bottom: 2px solid gray;
-    border-left: 2px solid gray;
-}
-
 /* Footer */
 footer {
     background-color: #3a7dfd;
@@ -168,6 +143,11 @@ footer {
 
 .social-block {
     text-align: center;
+}
+
+.link-icon {
+    width: 85%;
+    height: 85%;
 }
 
 .social-block a {
