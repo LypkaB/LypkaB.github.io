@@ -1,0 +1,131 @@
+body {
+    overflow-x: hidden;
+}
+
+#wrapper {
+    padding-right: 0;
+
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+#wrapper.toggled {
+    padding-right: 250px;
+}
+
+#sidebar-wrapper {
+    position: fixed;
+    z-index: 1000;
+    right: 250px;
+
+    width: 0;
+    height: 100%;
+    margin-top: -2%;
+    margin-right: -250px;
+
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+
+    background: #f08080;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    position: absolute;
+
+    width: 100%;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+
+    width: 250px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.sidebar-nav li {
+    line-height: 40px;
+
+    text-indent: 20px;
+}
+
+.sidebar-nav li a {
+    display: block;
+
+    text-decoration: none;
+
+    color: black;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+
+    color: #fff;
+    background: red;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+#category {
+    margin-top: 15%;
+}
+
+/*Media*/
+@media (min-width: 768px) {
+    #wrapper {
+        padding-right: 0;
+    }
+
+    #wrapper.toggled {
+        padding-right: 250px;
+    }
+
+    #sidebar-wrapper {
+        width: 0;
+        margin-top: -5%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #page-content-wrapper {
+        position: relative;
+
+        padding: 20px;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 692px) and (min-width: 577px) {
+    #sidebar-wrapper {
+        margin-top: -5%;
+    }
+}

@@ -1,0 +1,38 @@
+@media (max-width: 1199px) {
+
+    .header {
+        height: 590px;
+    }
+
+    .unity-img {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .visible-lg {
+        display: none;
+    }
+
+    .m-menu-link {
+        display: block;
+    }
+
+    .unity-img {
+        flex-direction: column;
+    }
+
+    .know-parent {
+        width: auto;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 575px) {
+
+}

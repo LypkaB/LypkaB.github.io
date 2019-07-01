@@ -9,7 +9,7 @@ img {
     max-width: 100%;
 }
 
-/* Header */
+/*<----- Header ----->*/
 header {
     padding-top: 22px;
     padding-bottom: 22px;
@@ -53,7 +53,7 @@ header {
     transition: 0.2s;
 }
 
-/* Portfolio */
+/*<----- Portfolio ----->*/
 .first-row {
     padding-bottom: 15px;
 }
@@ -77,7 +77,6 @@ header {
 .portfolio-block-tr {
     background-color: #fff;
     padding-top: 1px;
-    padding-bottom: 44px;
 }
 
 .portfolio-block-com {
@@ -149,18 +148,11 @@ hr {
     text-transform: uppercase;
 }
 
-.portfolio-block-tr a {
-    color: #072b6f;
-    font-size: 14px;
-    font-weight: 400;
-    text-decoration: underline;
-}
-
 .description {
     margin-top: 20px;
 }
 
-/* Footer */
+/*<----- Footer ----->*/
 footer {
     background-color: #3a7dfd;
     color: #fff;
@@ -228,7 +220,7 @@ footer {
     transition: 0.2s;
 }
 
-/*Media*/
+/*<----- Media ----->*/
 @media (max-width: 1199px) {
 
     .header-pretense {
