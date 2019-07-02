@@ -1,4 +1,14 @@
 @media (max-width: 991px) {
+
+    .visible-lg {
+        display: none;
+    }
+
+    .m-menu-link {
+        display: block;
+        margin-left: 85%;
+    }
+
     .header-logo {
         width: 10%;
     }
