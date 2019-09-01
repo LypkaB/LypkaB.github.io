@@ -55,7 +55,7 @@ header {
 
 /*<----- Portfolio ----->*/
 .first-row {
-    padding-bottom: 15px;
+    padding: 15px 0;
 }
 
 .other-rows {
@@ -105,9 +105,9 @@ hr {
 }
 
 .portfolio-subtitle {
-    margin-top: 10px;
-    margin-bottom: 30px;
-    font-size: 17px;
+    /*margin-top: 10px;*/
+    /*margin-bottom: 30px;*/
+    font-size: 22px;
     color: red;
 }
 
