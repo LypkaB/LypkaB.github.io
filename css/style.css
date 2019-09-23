@@ -54,6 +54,7 @@ li {
 
 a {
     text-decoration: none;
+    transition: 0.2s ease-out;
 }
 
 img {
@@ -125,6 +126,7 @@ header::before {
 .container {
     max-width: 1140px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .portfolio {
@@ -259,6 +261,7 @@ header::before {
     background-color: #343c4e;
     position: fixed;
     bottom: 5%;
+    transform: translateX(-5%);
     left: 3%;
     box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.5);
 }
