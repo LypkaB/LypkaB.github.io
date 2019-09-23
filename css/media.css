@@ -1,6 +1,13 @@
 /*	-------------------------------------------------
 	Media
 	------------------------------------------------- */
+@media (max-width: 1920px) {
+    /*<----- Portfolio ----->*/
+    .portfolio-item__img img:focus {
+        width: 60%;
+    }
+}
+
 @media (max-width: 1160px) {
     .container {
         width: 100%;
