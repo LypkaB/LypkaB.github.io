@@ -182,8 +182,8 @@ header::before {
     top: 50%;
     left: 50%;
     z-index: 31;
-    max-width: 85%;
-    height: 87%;
+    width: 80%;
+    height: auto;
     outline: none;
     pointer-events: none;
     -webkit-transform: translate(-50%, -50%);
