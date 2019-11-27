@@ -1,5 +1,5 @@
 /*	-------------------------------------------------
-	Media
+	 Media
 	------------------------------------------------- */
 @media (max-width: 1160px) {
     .container {
@@ -16,10 +16,6 @@
     /*<----- Portfolio ----->*/
     .portfolio-item {
         flex-basis: 40%;
-    }
-
-    .portfolio-item__img img {
-        height: 100%;
     }
 
     .last {
