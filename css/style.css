@@ -220,6 +220,10 @@ header::before {
     border-bottom: 1px solid #0052c2;
 }
 
+.portfolio-item:nth-child(4) .portfolio-item__title {
+    font-size: 18px;
+}
+
 .portfolio-item__descr p {
     margin-top: 0;
     margin-bottom: 15px;
