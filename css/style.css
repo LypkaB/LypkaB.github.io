@@ -154,8 +154,16 @@ header::before {
 
 .portfolio__projects {
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     flex-wrap: wrap;
+}
+
+.portfolio__projects > div + div {
+    margin-left: 57px;
+}
+
+.portfolio-item:nth-child(4n) {
+    margin-left: 0;
 }
 
 .portfolio-item {
@@ -215,6 +223,10 @@ header::before {
     border-bottom: 1px solid #000;
 }
 
+.portfolio-item__title a:nth-child(3) {
+    font-size: 16px;
+}
+
 .portfolio-item__title a:hover {
     color: #0052c2;
     border-bottom: 1px solid #0052c2;
@@ -227,6 +239,10 @@ header::before {
 
 .last {
     margin: 0 auto;
+}
+
+.portfolio-item:nth-child(1) .portfolio-item__title {
+    margin-bottom: 0;
 }
 
 .training-projects {
@@ -352,6 +368,10 @@ footer p {
     /*<----- Portfolio ----->*/
     .portfolio__projects {
         justify-content: space-around;
+    }
+
+    .portfolio__projects > div + div {
+        margin-left: 0;
     }
 }
 
