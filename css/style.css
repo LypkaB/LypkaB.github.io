@@ -154,7 +154,6 @@ header::before {
 
 .portfolio__projects {
     display: flex;
-    /*justify-content: space-between;*/
     flex-wrap: wrap;
 }
 
@@ -162,7 +161,8 @@ header::before {
     margin-left: 57px;
 }
 
-.portfolio-item:nth-child(4n) {
+.portfolio-item:nth-child(4),
+.portfolio-item:nth-child(7) {
     margin-left: 0;
 }
 
