@@ -241,8 +241,8 @@ header::before {
     margin: 0 auto;
 }
 
-.portfolio-item:nth-child(1) .portfolio-item__title {
-    margin-bottom: 0;
+.lavlabel-title {
+    margin-bottom: -8px;
 }
 
 .training-projects {
